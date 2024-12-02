@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 用于测试的单例A
+/// 鐢ㄤ簬娴嬭瘯鐨勫崟渚婣
 /// </summary>
 public class SingletonA : Singleton<SingletonA>
 {
