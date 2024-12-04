@@ -10,9 +10,9 @@
   一对多的依赖关系，让多个观察者对象同时监听一个主题对象的状态变化。当主题发生改变时，所有依赖于它的观察者都会自动收到通知并作出相应反应。  
   Obeserver Pattern其实本身就是一个消息系统
 ### 应用场景  
-  1:事件的广播与监听：
+  1:事件的广播与监听：  
     涉及到当玩家做出某一动作时，触发多个系统的变化时  
-  2:模块间的通信  
+  2:模块间的通信：  
     UI监听游戏状态的变化，根据游戏的状态来更新界面  
 ## State Machine Pattern Unity状态机模式  
   Used to manage the different states of objects and their transition logic between states,  
