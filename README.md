@@ -12,6 +12,21 @@
   用于确保一个类只有一个实例，并且提供全局访问点  
 ### 应用场景  
    通常在游戏中的各管理器中使用  
+## Factory Pattern 工厂模式  
+  It provides an interface for creating objects, but the specific object creation logic is taken care of by the factory class.  
+  Hides the details of object creation, and the client only needs to get the required object through the factory class, and does not need to care about the specific creation process of the object.  
+  工厂模式它提供了一种创建对象的接口，但具体的对象创建逻辑由工厂类负责。隐藏了对象的创建细节，客户端只需要通过工厂类来获取所需的对象，而不需要关心对象的具体创建过程。  
+### Advantage 优点  
+  ·降低了客户端与创建对象之间的耦合度  
+  ·通过工厂类统一来管理对象的创建，提高代码的可维护性和可扩展性  
+  ·可以根据需要动态的来进行创建对象的切换，灵活度高  
+### 应用场景  
+  ·游戏中游戏对象的创建：在开发的过程中，可能要生成很多种的游戏对象，例如有子弹、敌人、一些道具等等，此时就可以通过工厂模式将游戏对象的创建逻辑封装在工厂类中。  
+  ·游戏中资源的加载：在开发的过程中，可能有许多的资源需要进行加载，例如音效、模型等等，此时就可以通过工厂模式将这些资源的创建逻辑封装在工厂类中。  
+  ·游戏中的UI界面：在开发的过程中，UI的界面是不止一种的，此时对UI的生成也可以采用工厂模式将这些UI的生成的逻辑封装在工厂类中。  
+### Extend 工厂模式的扩展  
+  ·简单工厂模式：只通过一个工厂类来创建对象，客户端根据需要创建对象的类型传递给工厂然后再创建相应类型的对象。  
+  ·抽象工厂模式：提供一个抽象的工厂接口和一组具体的工厂实现类来创建一系列相关或依赖对象。  
 ## Obeserver Pattern 观察者模式  
   A one to many dependency relationship that allows multiple observer objects to simultaneously monitor the state changes of a subject object.  
   When the theme changes, all observers who rely on it will automatically receive notifications and respond accordingly.  
