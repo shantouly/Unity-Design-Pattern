@@ -44,3 +44,12 @@
 ### 应用场景  
   主要在角色行为控制、敌人AI、动画系统控制、UI状态管理等等使用。  
   StateMachine文件夹中包含了两种状态机模式的实现，一种是简易的实现，一种是优化版。  
+## MVC Pattern Unity Model、View、Controller模式  
+  The MVC pattern is a very common design pattern, also known as a framework.  
+  It divides the program into three parts: model, view, and controller.  
+  Using this pattern in Unity allows us to effectively separate the logic of the code and maintain and extend it effectively  
+### Structure 结构  
+  ·Model：程序中数据和业务逻辑的表示，负责处理数据的存储和更新  
+  ·View：程序中用户界面的表示，负责显示数据  
+  ·Controller：程序中逻辑和交互的表示，用来控制Model、View，用更加具体的用户逻辑来处理Model中的数据和View中的数据的显示  
+
