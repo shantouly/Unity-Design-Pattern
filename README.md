@@ -48,7 +48,7 @@
   The MVC pattern is a very common design pattern, also known as a framework.  
   It divides the program into three parts: model, view, and controller.  
   Using this pattern in Unity allows us to effectively separate the logic of the code and maintain and extend it effectively  
-  MVC模式是一种十分常见的设计模式，也可以被称为一种框架。它将程序划分为三个部分：模型、视图、控制器。在Unity中使用这种模式可以很好地将程序的逻辑进行分离，有利于后续的维护和扩展
+  MVC模式是一种十分常见的设计模式，也可以被称为一种框架。它将程序划分为三个部分：模型、视图、控制器。在Unity中使用这种模式可以很好地将程序的逻辑进行分离，有利于后续的维护和扩展  
 ### Structure 结构  
   ·Model：程序中数据和业务逻辑的表示，负责处理数据的存储和更新  
   ·View：程序中用户界面的表示，负责显示数据  
