@@ -44,6 +44,28 @@
 ### 应用场景  
   主要在角色行为控制、敌人AI、动画系统控制、UI状态管理等等使用。  
   StateMachine文件夹中包含了两种状态机模式的实现，一种是简易的实现，一种是优化版。  
+## Object Pool Pattern对象池模式  
+  The core idea of object pooling is not to delete it directly after use, but to put it back into the pool and retrieve it when needed.  
+  In the development process of games, due to the frequent creation and deletion of game objects in many games, and the fact that game objects also contain a large number of objects,  
+  object pool optimization techniques have been well applied.  
+  对象池的核心思想：使用完不直接删除，而是将其放回池子里，需要的时候再取出来。在游戏的开发过程中，由于很多游戏的游戏对象创建和删除也很频繁，同时游戏对象也包含了非常多的对象，此时对象池的优化技术就有了很好的应用。  
+### 对象池主要的两点优化  
+  ·防止对象被频繁的创建和删除，从而内存抖动、频繁GC  
+  ·对象的初始化成本较高  
+### Main Functions 主要的方法  
+  ·从对象池中获取对象。  
+    从对象池中获取对象，如果是第一次获取物体要进行初始化。  
+  ·将对象送到对象池中。  
+    对象用完不用删除，将对象送回到对象池中。但是对象池中的对象的数量不能大于一个阈值，否则内存会爆。  
+  ·对象池中对象的预热。  
+    预加载一定数量对象池中的对象，这是一个较为重要的一个优化的点，如果不这样做，那么创建一个新对象也是需要时间的，如果在竞技游戏，这是耗时间的。
+  ·对象池中对象的缩小。  
+    如果对象池中的对象超过了该对象池中的阈值的话，是要进行删除的操作的，但是，删除一个对象也是需要消耗时间的，基于此，可以先不删除，等到加载界面的时候再删除也是可以的，这样可以给玩家一个更好的游戏体验。  
+  ·对象池中对象的重置。  
+    从对象池中每次取对象都必须要是新的，不能明显带有上次使用过的状态，因此，再每一次取对象之后要进行重置的操作，OnEnable中初始化对象。不在start中因为start只会执行一次的，OnEnable会在每次物体重新启用的时候执行。  
+### 应用场景  
+  ·频繁的创建或者删除对象。  
+  ·游戏中包含了十分多的对象。  
 ## MVC Pattern Unity Model、View、Controller模式  
   The MVC pattern is a very common design pattern, also known as a framework.  
   It divides the program into three parts: model, view, and controller.  
