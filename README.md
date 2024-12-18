@@ -75,4 +75,14 @@
   ·Model：程序中数据和业务逻辑的表示，负责处理数据的存储和更新  
   ·View：程序中用户界面的表示，负责显示数据  
   ·Controller：程序中逻辑和交互的表示，用来控制Model、View，用更加具体的用户逻辑来处理Model中的数据和View中的数据的显示  
-
+## AdapterPattern 适配器模式  
+  Convert the interface of a class into another interface desired by the client,  
+  so that classes that were originally unable to work together due to interface incompatibility can work together.  
+  将一个类的接口转换成客户希望的另一个接口使得原本由于接口不兼容而无法一起工作的类可以协同工作。  
+### Main Structure 主要的结构  
+  ·目标接口（Target）：客户端期望使用的接口，它应该是适配了各种类的接口  
+  ·适配者：已有的类，或者第三方的类，不满足客户的需求  
+  ·适配器：将目标接口与适配者接口连接起来，实现接口转换  
+### Main scene to use this pattern  
+  ·对第三方插件进行封装适配  
+  ·数据格式的转换  
