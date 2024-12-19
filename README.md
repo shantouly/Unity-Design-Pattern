@@ -1,6 +1,6 @@
 # Unity Design Pattern  
-# The Asset contains demos of various design patterns, some of which may have multiple corresponding implementations in various scenarios  
-# Asset中包含的是各种设计模式的demo，有的可能有多种对应实现的多种场景  
+## The Asset contains demos of various design patterns, some of which may have multiple corresponding implementations in various scenarios  
+## Asset中包含的是各种设计模式的demo，有的可能有多种对应实现的多种场景  
 ## Commend Pattern 命令模式  
   Encapsulate a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests,and support undoable operations  
   命令模式将请求封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象，同时支持可撤销的操作。  
