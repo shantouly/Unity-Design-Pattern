@@ -86,3 +86,16 @@
 ### Main scene to use this pattern  
   ·对第三方插件进行封装适配  
   ·数据格式的转换  
+## Strategy Pattern 策略模式  
+  Define a series of algorithms or operations, encapsulate each algorithm, and make them interchangeable with each other.  
+  策略模式定义一系列算法或者操作，将每一个算法封装起来，并且使得它们可以相互替换。使用策略模式可以让算法独立于使用它的客户端的代码的变化  
+### Main Structure 主要的结构  
+  ·Strategy Interface. 定义所有策略的公共接口  
+  ·Concrete strategies. 实现接口的不同策略  
+  ·Context. 持有一个策略对象，负责于客户端进行交互，并在需要时调用策略的方法  
+### Main scene to use this pattern  
+  ·角色行为的切换  
+  ·AI决策逻辑：不同的AI的行为（巡逻、追击、逃跑）  
+  ·文件的读取与处理：处理不同的文件的格式（这里用适配器模式也是可以的）  
+  ·游戏难度模式的切换：切换简单、普通、困难模式下的规则或者算法（可能没有这么明显）  
+
