@@ -1,4 +1,6 @@
 # Unity Design Pattern  
+## Introduction  
+  该仓库主要用来介绍unity中各设计模式的具体的实现。设计模式在很多的开发中都是十分常见的，不只是在游戏开发中，那么，在游戏开发中运用好设计模式是很重要的，它能够让代码编写起来更加简洁、可读性也会变好、逻辑性也会更加清晰。  
 ## The Asset contains demos of various design patterns, some of which may have multiple corresponding implementations in various scenarios  
 ## Asset中包含的是各种设计模式的demo，有的可能有多种对应实现的多种场景  
 ## Commend Pattern 命令模式  
